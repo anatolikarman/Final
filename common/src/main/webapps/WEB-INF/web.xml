@@ -26,7 +26,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>FindAllPage</servlet-name>
-        <url-pattern>/FAP</url-pattern>
+        <url-pattern>/FindAllPage</url-pattern>
     </servlet-mapping>
 
 

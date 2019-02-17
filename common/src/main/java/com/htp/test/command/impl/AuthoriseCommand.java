@@ -58,6 +58,6 @@ public class AuthoriseCommand implements CommandInterface {
         }
         request.setAttribute(ACTION, FORWARD_ACTION_ATTRIBUTE);
 
-        return "FAP";
+        return "FindAllPage";
     }
 }
