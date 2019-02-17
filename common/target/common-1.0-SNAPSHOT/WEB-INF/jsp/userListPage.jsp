@@ -9,7 +9,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Please press "Find All" to load all user data</title>
+    <title>All Users</title>
 </head>
 <body background="pattern.jpg">
 <div align="center">
