@@ -6,7 +6,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>index</title>
+    <title>Welcome</title>
 </head>
 <body background="pattern.jpg">
 <br>
