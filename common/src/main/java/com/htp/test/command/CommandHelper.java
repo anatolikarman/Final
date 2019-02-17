@@ -1,5 +1,7 @@
 package com.htp.test.command;
 
+
+import com.htp.test.command.impl.AuthoriseCommand;
 import com.htp.test.command.impl.ViewAllUsersCommand;
 
 import javax.servlet.http.HttpServletRequest;
@@ -16,6 +18,7 @@ public class CommandHelper {
 
         public CommandHelper() {
             commands.put(CommandName.FIND_ALL, ViewAllUsersCommand.getInstance());
+            commands.put(CommandName.AUTHORISE, AuthoriseCommand.getInstance());
 
         }
 
@@ -32,7 +35,7 @@ public class CommandHelper {
 
 
         private enum CommandName {
-            FIND_ALL,
+            FIND_ALL, AUTHORISE
         }
 
 
