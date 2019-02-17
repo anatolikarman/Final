@@ -1,6 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" contentType="text/html; charset=utf-8"
-         pageEncoding="utf-8"%>
+         pageEncoding="utf-8" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -9,18 +9,23 @@
     <title>index</title>
 </head>
 <body background="pattern.jpg">
-
-<br>
-<a href="FAP">Go to Find all</a>
 <br>
 <br>
 <br>
-<a href="login">Go to Login Page</a>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div align="center" class="mainButton">
+    <a href="login">Go to Login Page</a>
+</div>
 
 
-
-
-</body>`
+</body>
+`
 <!--
 <form action="FrontController" method="post">
     <input type="hidden" name="userId" value="${element.userId}">
@@ -30,9 +35,6 @@
 
 
 -->
-
-
-
 
 
 </html>

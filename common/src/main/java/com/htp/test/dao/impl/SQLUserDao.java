@@ -40,7 +40,7 @@ public class SQLUserDao implements UserDao {
             "VALUES (?, ?, ?, ?, ?, ?, ? )";
     private static final String DELETE_USER = "";
     private static final String SELECT_BY_ID = "SELECT * FROM autorization WHERE idUser = ?";
-    private static final String SELECT_BY_LOGIN_PASSWORD = "SELECT * FROM  User WHERE Login = ? AND Password = ?";
+    private static final String SELECT_BY_LOGIN_PASSWORD = "SELECT * FROM  user WHERE Login = ? AND Password = ?";
     private static final String LAST_INSERT_ID = "SELECT last_insert_id() as lastId";
     private static final String LAST_ID = "lastId";
     private static final String FIND_ALL = "SELECT * FROM User";
@@ -87,6 +87,7 @@ public class SQLUserDao implements UserDao {
                 user.setRegistrationDate(set.getString(REGISTRATION_DATE));
                 user.setName(set.getString(NAME));
                 user.setSurname(set.getString(SURNAME));
+
                 return user;
             } else {
                 return null;

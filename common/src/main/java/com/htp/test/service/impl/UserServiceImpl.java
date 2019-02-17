@@ -55,9 +55,9 @@ public class UserServiceImpl implements UserService {
 
             if(VALIDATE.isValid(user)) {
 
-                String password = user.getPassword();
-                String passwordMD5 = DigestUtils.md5Hex(password);
-                user.setPassword(passwordMD5);
+        //       String password = user.getPassword();
+        //       String passwordMD5 = DigestUtils.md5Hex(password);
+        //       user.setPassword(passwordMD5);
 
                 boolean check = userDao.checkUser(user.getLogin(), user.getPassword());
                 if (!check) {

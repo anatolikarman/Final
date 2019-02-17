@@ -11,43 +11,62 @@
 <head>
     <title>Please press "Find All" to load all user data</title>
 </head>
-<body>
-<a href="FrontController?command=FIND_ALL">View List</a>
+<body background="pattern.jpg">
+<div align="center">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <a href="FrontController?command=FIND_ALL">View List</a>
 
 
-<table border ="1" width = "300" cellpadding="5" >
-
-    <tr><th>User Id</th> <th>Name</th> <th>Surname</th> <th>Login</th><th>Password</th><th>Registration Date</th>
-        <th>Role Id</th></tr>
-    <c:forEach items="${listUser}" var="element">
+    <table border="1" width="300" cellpadding="5">
 
         <tr>
-            <td>
-                <p>${element.userId}</p>
-            </td>
-            <td>
-                <p>${element.name}</p>
-            </td>
-            <td>
-                <p>${element.surname}</p>
-            </td>
-            <td>
-                <p>${element.login}</p>
-            </td>
-            <td>
-                <p>${element.password}</p>
-            </td>
-            <td>
-                <p>${element.registrationDate}</p>
-            </td>
-            <td>
-                <p>${element.roleId}</p>
-            </td>
-
+            <th>User Id</th>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Login</th>
+            <th>Password</th>
+            <th>Registration Date</th>
+            <th>Role Id</th>
         </tr>
-    </c:forEach>
-</table>
+        <c:forEach items="${listUser}" var="element">
 
+            <tr>
+                <td>
+                    <p>${element.userId}</p>
+                </td>
+                <td>
+                    <p>${element.name}</p>
+                </td>
+                <td>
+                    <p>${element.surname}</p>
+                </td>
+                <td>
+                    <p>${element.login}</p>
+                </td>
+                <td>
+                    <p>${element.password}</p>
+                </td>
+                <td>
+                    <p>${element.registrationDate}</p>
+                </td>
+                <td>
+                    <p>${element.roleId}</p>
+                </td>
 
+            </tr>
+        </c:forEach>
+    </table>
+
+</div>
+>
 </body>
 </html>

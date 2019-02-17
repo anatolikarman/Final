@@ -10,17 +10,27 @@
 <head>
 
 </head>
-<body>
-<div>
-    <form action="FrontController"  method="post">
+<body background="pattern.jpg">
+<div align="center">
+    <form action="FrontController" method="post">
         <input type="hidden" name="command" value="AUTHORISE">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
         <tr>
             <td>Login</td>
-            <td><input type="text" name="login" /></td>
+            <td><input type="text" name="login"/></td>
         </tr>
         <tr>
             <td>Password</td>
-            <td><input type="password" name="password" /></td>
+            <td><input type="password" name="password"/></td>
         </tr>
         <input type="submit" value="login"/>
 
