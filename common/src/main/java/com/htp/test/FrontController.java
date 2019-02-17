@@ -59,7 +59,8 @@ public class FrontController extends HttpServlet {
                         dispatcher.forward(request, response);
                     }
                 }
-			} catch (CommandException e) {
+			}
+			catch (CommandException e) {
                 LOGGER.error("CommandException", e);
 				response.sendRedirect(request.getContextPath() + ERROR_PAGE);
 			}

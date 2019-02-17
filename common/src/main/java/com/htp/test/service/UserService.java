@@ -7,7 +7,7 @@ import com.htp.test.exceptions.ServiceException;
 public interface UserService extends GenericServiceInterface <User, Long>{
  //   User loadById(Long userId) throws ServiceException, NoSuchEntityException, ServiceException;
 
-
+    User getUserNode(String login, String password);
     /**
      * Method provides operation for login user
      *

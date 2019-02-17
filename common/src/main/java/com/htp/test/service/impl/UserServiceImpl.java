@@ -37,7 +37,10 @@ public class UserServiceImpl implements UserService {
     }
 
 
-
+    @Override
+    public User getUserNode(String login, String password) {
+        return null;
+    }
 
     /**
      * Method check login and password information from some user and get user object if authorization success
@@ -75,8 +78,8 @@ public class UserServiceImpl implements UserService {
     public List<User> loadAll() throws ServiceException {
         List<User> listResult;
         try {
-            UserDao room = factory.getUserDao();
-            listResult = room.findAll();
+            UserDao a = factory.getUserDao();
+            listResult = a.findAll();
             return listResult;
         } catch (DaoException e) {
             throw new ServiceException("Service Exception", e);

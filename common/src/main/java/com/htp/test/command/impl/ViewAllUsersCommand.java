@@ -2,11 +2,10 @@ package com.htp.test.command.impl;
 
 import com.htp.test.command.CommandException;
 import com.htp.test.command.CommandInterface;
-import com.htp.test.command.util.PagesConfigManager;
-import com.htp.test.command.util.Pagination;
+
 import com.htp.test.domain.to.User;
 import com.htp.test.exceptions.ServiceException;
-import com.htp.test.service.PagePath;
+
 import com.htp.test.service.UserService;
 import com.htp.test.service.impl.UserServiceImpl;
 import org.apache.log4j.Logger;
@@ -15,13 +14,12 @@ import org.apache.log4j.Logger;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.List;
+
 
 public class ViewAllUsersCommand implements CommandInterface {
 
     private static final UserService SERVICE = UserServiceImpl.getInstance();
-  //  private static final PagesConfigManager MANAGER = PagesConfigManager.getInstance();
-   // private static final Pagination<User> pagination = Pagination.getInstance();
+
     private static final String ACTION = "action";
     private static final String FORWARD_ACTION_ATTRIBUTE = "forward";
 
@@ -50,7 +48,7 @@ public class ViewAllUsersCommand implements CommandInterface {
         }
         request.setAttribute(ACTION, FORWARD_ACTION_ATTRIBUTE);
 
-        return "/index";
+        return "/FAP";
     }
 
 
